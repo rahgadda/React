@@ -1,5 +1,11 @@
 # React.js
 
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Modules](#modules)
+- [Appendix](#appendix)
+
 ## Overview
 - React.js is an open-source, front end, JavaScript `library` for building user interfaces or UI components.
 - It is maintained by `Facebook` and a community of individual developers and companies.
@@ -21,3 +27,26 @@
       - Assign new VDOM as an older VDOM
 
 ![](./01-Images/01-ReactArchitecture.png)
+
+## Installation
+- Babel
+- Webpack 5
+
+## Modules
+Below are the basic building blocks of React.js
+- Components
+- JSX
+- State
+- Props
+- Router
+- Event Handler
+- Lifecycle
+- Hooks
+- Redux
+- Material UI
+- Storybook
+- Jest
+
+## Appendix
+- [React](https://reactjs.org/)
+- [React Video Tutorial - Codevolution](https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
