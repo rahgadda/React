@@ -62,8 +62,8 @@
 
   # Required during Development-only
   npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
-  npm i -D webpack webpack-cli webpack-dev-server 
-  npm i -D html-webpack-plugin html-loader
+  npm i -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+  npm i -D html-loader path
 
   # Babel Configuration
   vi .babelrc

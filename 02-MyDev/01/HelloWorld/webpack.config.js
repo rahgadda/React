@@ -25,6 +25,12 @@ module.exports = {
         }
         ],
     },
+    devServer: {
+      historyApiFallback: true,
+      contentBase: path.join(__dirname, 'dist'),
+      compress: true,
+      port: 9000
+    },
     resolve: {
         extensions: ['*', '.js', '.jsx'],
     },
@@ -34,12 +40,9 @@ module.exports = {
             filename: './index.html'
         })
     ],
+
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
-    },
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: path.resolve(__dirname, './dist'),
-    },
+    }
 };
