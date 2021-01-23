@@ -82,7 +82,7 @@
 
     const path = require('path');
     const HTMLWebpackPlugin = require('html-webpack-plugin');
- 
+    
     module.exports = {
         mode: 'development',
         entry: path.resolve(__dirname, './src/index.js'),
@@ -91,7 +91,11 @@
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                use: [
+                    {
+                        loader:'babel-loader'
+                    }
+                ]
             },
             {
                 test: /\.html$/i,
@@ -103,6 +107,12 @@
             }
             ],
         },
+        devServer: {
+          historyApiFallback: true,
+          contentBase: path.join(__dirname, 'dist'),
+          compress: true,
+          port: 9000
+        },
         resolve: {
             extensions: ['*', '.js', '.jsx'],
         },
@@ -112,28 +122,25 @@
                 filename: './index.html'
             })
         ],
+    
         output: {
             path: path.resolve(__dirname, './dist'),
             filename: 'index.js',
-        },
-        devtool: 'inline-source-map',
-        devServer: {
-            contentBase: path.resolve(__dirname, './dist'),
-        },
+        }
     };
+    
 
-    # NPM Script Update
-    "scripts": {
-        "start": "webpack-dev-server --mode development --open --hot",
-        "build": "webpack --mode production"
-    } 
-
-    # Folders
-    mkdir -m777 src
-    mkdir -m777 dist
+  # NPM Script Update
+  "scripts": {
+      # This is not working, webpack server. Any help really appreciated.
+      "start": "webpack-dev-server --mode development --open --hot",
+      "build": "webpack --mode production"
+  }   
+  
+  # Folders
+  mkdir -m777 src
+  mkdir -m777 dist
   ```
-- Adding live-reload
-- Adding Webpack Module Federation 
 
 ## Modules
 Below are the basic building blocks of React.js
