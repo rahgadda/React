@@ -20,11 +20,12 @@
     - Each component maintains a `State`. Based on user interactions, React re-renders components by reacting to change in state.
     - During re-rendering, once the component is ready to render, a virtual snapshot of the change in component state is taken.
     - React now compares the snapshot with the real `DOM` and analyzes the differences. Once it finds the difference, the changes are applied to the UI that’s reflected on the user’s screen. 
-    - React uses Virtual DOM (`VDOM`) process to update actual DOM. This has following steps
+    - React uses Virtual DOM (`VDOM`) process to update actual DOM. This has following steps:
       - Create a VDOM with a new state
       - Compare it with older VDOM
       - Update only different nodes in real DOM
       - Assign new VDOM as an older VDOM
+    - [Video - How VDOM works](https://www.youtube.com/watch?v=BYbgopx44vo)
 
 ![](./01-Images/01-ReactArchitecture.png)
 
@@ -63,7 +64,7 @@
   # Required during Development-only
   npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
   npm i -D webpack webpack-cli webpack-dev-server html-webpack-plugin
-  npm i -D html-loader path
+  npm i -D html-loader
 
   # Babel Configuration
   vi .babelrc
@@ -82,7 +83,7 @@
 
     const path = require('path');
     const HTMLWebpackPlugin = require('html-webpack-plugin');
- 
+    
     module.exports = {
         mode: 'development',
         entry: path.resolve(__dirname, './src/index.js'),
@@ -91,7 +92,11 @@
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                use: [
+                    {
+                        loader:'babel-loader'
+                    }
+                ]
             },
             {
                 test: /\.html$/i,
@@ -103,6 +108,12 @@
             }
             ],
         },
+        devServer: {
+          historyApiFallback: true,
+          contentBase: path.join(__dirname, 'dist'),
+          compress: true,
+          port: 9000
+        },
         resolve: {
             extensions: ['*', '.js', '.jsx'],
         },
@@ -112,28 +123,37 @@
                 filename: './index.html'
             })
         ],
+    
         output: {
             path: path.resolve(__dirname, './dist'),
             filename: 'index.js',
-        },
-        devtool: 'inline-source-map',
-        devServer: {
-            contentBase: path.resolve(__dirname, './dist'),
-        },
+        }
     };
+    
+  # NPM Script Update
+  "scripts": {
+      # This is not working, webpack server. Any help really appreciated.
+      "start": "webpack-dev-server --mode development --open --hot",
+      "build": "webpack --mode production"
+  }   
+  
+  # Folders for Source and Webpack Final Code
+  mkdir -m777 src
+  mkdir -m777 dist
 
-    # NPM Script Update
-    "scripts": {
-        "start": "webpack-dev-server --mode development --open --hot",
-        "build": "webpack --mode production"
-    } 
-
-    # Folders
-    mkdir -m777 src
-    mkdir -m777 dist
+  # Create index.js and index.html
   ```
-- Adding live-reload
-- Adding Webpack Module Federation 
+  <pre>
+  <a href=./02-MyDev/01/HelloWorld/src/index.js>index.js</a>
+  <a href=./02-MyDev/01/HelloWorld/src/index.html>index.html</a>
+  <pre>
+- React team created sample code generator 
+  ```sh
+  npx create-react-app <app name>
+  cd <app name>
+  npm install
+  npm start
+  ```
 
 ## Modules
 Below are the basic building blocks of React.js
@@ -141,10 +161,11 @@ Below are the basic building blocks of React.js
 - JSX
 - State
 - Props
-- Router
 - Event Handler
 - Lifecycle
+- Forms
 - Hooks
+- Router
 - Redux
 - Material UI
 - Storybook
@@ -153,6 +174,6 @@ Below are the basic building blocks of React.js
 ## Appendix
 - [React](https://reactjs.org/)
 - [React Video Tutorial - Codevolution](https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
-- [React Setup 1](https://www.robinwieruch.de/minimal-react-webpack-babel-setup)
-- [React Setup 2](https://medium.com/@siddharthac6/getting-started-with-react-js-using-webpack-and-babel-66549f8fbcb8)
-- [React Setup 3](https://iamabhirupdatta.medium.com/setting-up-react-17-with-webpack-and-babel-part-1-e11b674a6102)
+- [React Live Coding Tutorial](https://scrimba.com/learn/learnreact)
+- [React Setup Video](https://www.youtube.com/watch?v=ihhPyqfdbjo&t=514s)
+- [React 17 Setup](https://iamabhirupdatta.medium.com/setting-up-react-17-with-webpack-and-babel-part-1-e11b674a6102)
