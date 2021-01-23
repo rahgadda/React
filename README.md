@@ -147,6 +147,15 @@
   <a href=./02-MyDev/01/HelloWorld/src/index.js>index.js</a>
   <a href=./02-MyDev/01/HelloWorld/src/index.html>index.html</a>
   <pre>
+  
+  ```sh
+  # Run in Dev Mode
+  npm start
+
+  # Production Mode
+  npm run build
+  ```
+
 - React team created sample code generator 
   ```sh
   npx create-react-app <app name>
