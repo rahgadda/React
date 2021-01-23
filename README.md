@@ -146,7 +146,7 @@
   <pre>
   <a href=./02-MyDev/01/HelloWorld/src/index.js>index.js</a>
   <a href=./02-MyDev/01/HelloWorld/src/index.html>index.html</a>
-  <pre>
+  </pre>
   
   ```sh
   # Run in Dev Mode
