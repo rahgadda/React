@@ -167,8 +167,8 @@
 
 ## Modules
 Below are the basic building blocks of React.js
-- Components
-- JSX
+- [Components](./03-Modules/01-components.md)
+- [JSX](.03-Modules/02-jsx.md)
 - State
 - Props
 - Event Handler
