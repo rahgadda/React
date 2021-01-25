@@ -135,7 +135,7 @@
   # NPM Script Update
   "scripts": {
       # This is not working, webpack server. Any help really appreciated.
-      "start": "webpack-dev-server --mode development --open --hot",
+      "start": "webpack serve --mode development --open --hot",
       "build": "webpack --mode production"
   }   
   
