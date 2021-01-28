@@ -73,3 +73,33 @@ let totalCompanyAge = companies.reduce((total,company) => {
   return total+ company.end-company.start;
 },0)
 console.log(totalCompanyAge);
+
+// Destructuring 
+
+// Object
+let company = {name: "Company One", category: "Finance", start: 1981, end: 2004};
+
+let {name, category, start, end} = company;
+console.log("name = "+ name);
+
+// Renaming Assignment
+let {name1, category1, start1, end: endDate} = company;
+console.log("endDate = "+ endDate);
+
+//Nested Object
+let nestedObject = {
+  name: "Test Name",
+  company: "Test Company",
+  address: {
+    add1:"address 1",
+    add2:"address 2",
+    zip:"50003",
+  }
+}
+
+let { address: { zip} } = nestedObject
+console.log(zip);
+
+//Arrays
+let [first, second,...remaining] = ages
+console.log(first, second, remaining);
