@@ -17,24 +17,24 @@
     - These started as `stateless component` because they do not hold or manage state.
     - Using hooks, state can be added to functional component.
 
-    ```jsx
-    import React from "react";
-
-    function FunctionalComponent() {
-      return <h1>Hello, world</h1>;
-    }
-    ```
+      ```jsx
+      import React from "react";
+  
+      function FunctionalComponent() {
+        return <h1>Hello, world</h1>;
+      }
+      ```
   - **Class:**
     - These are created by extending `React.Component` and create a `render` function which returns a React element. 
     - These components are stateful component because they can hold or manage local state. 
 
-    ```jsx
-    import React from "react";
-
-    class ClassComponent extends React.Component {
-      render() {
-        return <h1>Hello, world</h1>;
+      ```jsx
+      import React from "react";
+  
+      class ClassComponent extends React.Component {
+        render() {
+          return <h1>Hello, world</h1>;
+        }
       }
-    }
-    ```
+      ```
     
