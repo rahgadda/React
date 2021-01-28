@@ -100,6 +100,6 @@ let nestedObject = {
 let { address: { zip} } = nestedObject
 console.log(zip);
 
-//Arrays
+//Arrays & Spread Operator
 let [first, second,...remaining] = ages
 console.log(first, second, remaining);
