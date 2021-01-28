@@ -3,7 +3,7 @@
 ## Overview
 - Props are `arguments` passed into React components. These can also be used to pass data from parent component to child component.
 - React Props are `read-only` or `immutable`. React will through an error if we try to change their value.
-- Props are passed to components via `HTML attributes`. `brand` is an example of prop to Car component.
+- Props are passed to components via `HTML attributes`. In the `Car` component, `brand` is an example of prop.
   ```jsx
   <Car brand="Ford" />;
   ```
