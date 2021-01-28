@@ -23,11 +23,11 @@
   ```
 - JSX should always return `single element`. `<div>` tag or `<>` [called as react fragment] can be used to wrap around and return multiple elements. 
 - Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names. Example `onclick` event is used as `onClick`
- ```javaScript
- const App = () =>{
-   return (<input type="button" onClick={hello});
- } 
- ```
+  ```javaScript
+  const App = () =>{
+    return (<input type="button" onClick={hello});
+  } 
+  ```
 - CSS `className` should be used instead of `class`.
 - The `import` statement can be used to import `js` file and `css` files. The `.js` file extension is optional but `.css` extension is mandatory.
 - Every element in JSX should be closed
