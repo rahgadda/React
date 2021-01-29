@@ -170,6 +170,8 @@
 ## Modules
 Below are the basic building blocks of React.js
 - [ES6 Features React](./03-Modules/01-es6.md)
+- [Mock Rest Api](./03-Modules/02-mock.md)
+- [Fetch Api](./03-Modules/03-fetch.md)
 - [Components](./03-Modules/02-components.md)
 - [JSX](./03-Modules/03-jsx.md)
 - [Props](./03-Modules/04-props.md)
