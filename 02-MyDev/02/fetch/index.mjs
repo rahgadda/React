@@ -1,4 +1,4 @@
-import {get, post, put} from "./lib.mjs"
+import {get, post, put, _delete} from "./lib.mjs"
 
 const url = "https://my-json-server.typicode.com/rahgadda/React.js/users";
 const post_body={
@@ -22,3 +22,6 @@ post(url, post_body).then(response => console.log("Post Successful, Data - " + J
 
 put(url+"/1", put_body).then(response => console.log("Put Successful, Data - " + JSON.stringify(response))+"\n\n")
         .catch(error => console.log("Put Error Details - " +error+"\n\n") );
+
+_delete(url+"/1").then(response => console.log("Delete Successful, Data - " + JSON.stringify(response) +"\n\n"))
+        .catch(error => console.log("Delete Error Details - " +error+"\n\n") );

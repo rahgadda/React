@@ -39,3 +39,13 @@ export async function post(url, body) {
     return await fetch(url, requestOptions)
                  .then(handleResponse);
 }
+
+//Delete Helper
+export async function _delete (url) {
+    const requestOptions = {
+        method: 'DELETE',
+        headers: { Accept: 'application/json' },
+    }
+    return await fetch(url, requestOptions)
+                 .then(handleResponse);
+}
