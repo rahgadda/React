@@ -54,3 +54,6 @@
 - This [site](http://my-json-server.typicode.com/) can be used to expose json file as Rest API.
 - This site requires to create a `db.json` file on the root folder as given in the repository [here](../db.json)
 - Naviaget to site `https://my-json-server.typicode.com/<your-username>/<your-repo>` to access data. For this repo data is availabel [here](https://my-json-server.typicode.com/rahgadda/React.js)
+- This site supports http https request.  
+- Api calls GET, POST, PUT, PATCH and DELETE are supported. 
+- Changes aren't persisted between calls.
