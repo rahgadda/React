@@ -50,3 +50,4 @@
      ```
 
 ## External Mocking
+- There are different mechanism to expose github json file as Rest Api.
