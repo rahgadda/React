@@ -16,15 +16,20 @@
 ## Architecture
 - Major challenge faced during complex UI codebase is involvement of massive team members.
 - More time is spent in determining what code does what. React solves this with below:
-    - Complexity of UI code is addressed by break down application into smaller, single-purpose `Components`.
+    - The `DOM` is a Tree representation of a `page`, starting from the <html> tag, going down into every child, which are called nodes.
+      - Every time the DOM changes, browser does two intensive operations:
+        - **repaint:** visbile changes to element but do not affect its layout.
+        - **reflow:** changes that affect the layout of a portion/whole page. These are critical to perform.
+    - To solve this problem in React, Complexity of UI code is addressed by break down application into smaller, single-purpose `Components`.
     - Each component maintains a `State`. Based on user interactions, React re-renders components by reacting to change in state.
     - During re-rendering, once the component is ready to render, a virtual snapshot of the change in component state is taken.
-    - React now compares the snapshot with the real `DOM` and analyzes the differences. Once it finds the difference, the changes are applied to the UI that’s reflected on the user’s screen. 
+    - React now compares the snapshot with the real `DOM (Document Object Model)` and analyzes the differences. Once it finds the difference, the changes are applied to the UI that’s reflected on the user’s screen.
     - React uses Virtual DOM (`VDOM`) process to update actual DOM. This has following steps:
-      - Create a VDOM with a new state
-      - Compare it with older VDOM
-      - Update only different nodes in real DOM
-      - Assign new VDOM as an older VDOM
+      - When a component state changes, React marks that Component as `dirty`. 
+      - Create a `VDOM` with a `new state`.
+      - Compare it with older VDOM.
+      - Update only different nodes in real DOM.
+      - Assign new VDOM as an older VDOM.
     - [Video - How VDOM works](https://www.youtube.com/watch?v=BYbgopx44vo)
 
 ![](./01-Images/01-ReactArchitecture.png)
