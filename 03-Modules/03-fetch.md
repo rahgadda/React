@@ -3,6 +3,9 @@
 ## Overview
 - This Api allows to perform declarative HTTP requests to a server.
 - For each request, it creates a Promise which must be resolved in order to define the content type and access the data.
+- Fetch api returns a response with multiple properties below are few refernces:
+  - `status`, a numeric value representing the HTTP status code.
+  - `statusText`, a status message, which is `OK` if the request succeeded.
 
 ## HTTP Examples
 - Post
