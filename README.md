@@ -183,6 +183,7 @@ Below are the basic building blocks of React.js
 - State
 - Event Handler
 - Lifecycle
+- Context Api
 - Forms
 - Hooks
 - Router
