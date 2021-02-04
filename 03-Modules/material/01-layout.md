@@ -9,7 +9,7 @@
     <Button />
   </Box>
   ```
-- Clone property is used to apply styles of Box to its child component. This will avoid creating any `<div>` tag. Clone and component should not be used together.
+- The `clone` property is used to apply styles of Box to its child component. This will avoid creating any `<div>` tag. Clone and component should not be used together.
   ```jsx
   <Box clone style={{color:red}}>
     <Button />
