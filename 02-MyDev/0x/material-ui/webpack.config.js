@@ -28,6 +28,7 @@ module.exports = {
     devServer: {
       historyApiFallback: true,
       contentBase: path.join(__dirname, 'dist'),
+      watchContentBase: true,
       compress: true,
       port: 9000
     },
