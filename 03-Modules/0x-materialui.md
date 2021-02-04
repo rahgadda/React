@@ -22,7 +22,6 @@
   npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
   npm i -D webpack webpack-cli webpack-dev-server html-webpack-plugin
   npm i -D html-loader
-  npm i -D browser-sync browser-sync-webpack-plugin
 
   # Folders for Source and Webpack Final Code
   mkdir -m777 src

@@ -1,6 +1,5 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -40,14 +39,8 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html',
             filename: './index.html'
-        }),
-            new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 8080,
-            proxy: 'http://localhost:9000',
         })
     ],
-
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
