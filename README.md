@@ -12,8 +12,12 @@
 - React is only concerned with `state management` and `rendering` that state to the `DOM`. 
 - React is called `library` instead of `framework` because it only supports `DOM manipulations`. 
   - Other UI framework capabilities like routing, two-way-data-binding will be handled by other libraries.
+- React is a better fit for developing `SPA (Single-Page Application)`. 
+  - These apps work inside a browser and does not require page reloading during use like Gmail, Facebook, Instagram etc...
+  - These are great for working in teams beacuse the backend developers can just focus on the API, and frontend developers can focus on creating the best user experience.
 
-## Architecture
+
+`. ## Architecture
 - Major challenge faced during complex UI codebase is involvement of massive team members.
 - More time is spent in determining what code does what. React solves this with below:
     - The `DOM` is a Tree representation of a `page`, starting from the <html> tag, going down into every child, which are called nodes.
