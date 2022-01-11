@@ -17,7 +17,7 @@
   - These are great for working in teams beacuse the backend developers can just focus on the API, and frontend developers can focus on creating the best user experience.
 
 
-`. ## Architecture
+## Architecture
 - Major challenge faced during complex UI codebase is involvement of massive team members.
 - More time is spent in determining what code does what. React solves this with below:
     - The `DOM` is a Tree representation of a `page`, starting from the <html> tag, going down into every child, which are called nodes.
