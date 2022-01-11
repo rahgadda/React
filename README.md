@@ -62,6 +62,8 @@
       - `webpack-dev-server:` A minimal server for client-side development.
       - `html-webpack-plugin:` Generate a html file and hooks with `index.js` file.
       - `html-loader:` Export html as string to be read by webpack.
+- React can also be created using CDN
+  - [Link](https://reactjs.org/docs/cdn-links.html)
 - HelloWorld React App steps
   ```sh
   # Initialize NPM Project
