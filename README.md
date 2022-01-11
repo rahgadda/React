@@ -64,6 +64,7 @@
       - `html-loader:` Export html as string to be read by webpack.
 - React can also be created using CDN
   - [Link](https://reactjs.org/docs/cdn-links.html)
+  - [Application](./02-MyDev/00/simple-react-app)
 - HelloWorld React App steps
   ```sh
   # Initialize NPM Project
