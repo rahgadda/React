@@ -16,6 +16,7 @@
     - Its a plain JavaScript function that returns JSX.
     - These started as `stateless component` because they do not hold or manage state.
     - Using hooks, state can be added to functional component.
+    - Name of component should be `CamelCase`.
 
       ```jsx
       import React from "react";
