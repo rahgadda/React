@@ -14,7 +14,7 @@
   - Other UI framework capabilities like routing, two-way-data-binding will be handled by other libraries.
 - React is a better fit for developing `SPA (Single-Page Application)`. 
   - These apps work inside a browser and does not require page reloading during use like Gmail, Facebook, Instagram etc...
-  - These are great for working in teams beacuse the backend developers can just focus on the API, and frontend developers can focus on creating the best user experience.
+  - These are great for working in teams because the backend developers can just focus on the API, and frontend developers can focus on creating the best user experience.
 
 
 ## Architecture

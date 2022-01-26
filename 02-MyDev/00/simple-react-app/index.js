@@ -1,1 +1,5 @@
-ReactDOM.render(<h1>Hello, everyone!</h1>, document.getElementById("root"))
+const page = (
+                <h1>Hello, everyone!</h1>
+             );
+
+ReactDOM.render(page, document.getElementById("root"))
