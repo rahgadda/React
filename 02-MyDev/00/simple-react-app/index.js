@@ -4,7 +4,10 @@
 //ReactDOM.render(SampleH1, document.getElementById("root"))
 
 //Using functions
-// const SampleH1 = (<h1>Hello, Everyone!</h1>);
+//const SampleH1 = (<h1>Hello, Everyone!</h1>);
+//Wrong way
+// ReactDOM.render(SampleH1(), document.getElementById("root"))
+//Right way
 // ReactDOM.render(SampleH1, document.getElementById("root"))
 
 //Creating functions as Elements
