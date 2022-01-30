@@ -184,9 +184,10 @@ Below are the basic building blocks of React.js
 - [ES6 and Above Features for React](./03-Modules/01-es6.md)
 - [Mock Rest Api](./03-Modules/02-mock.md)
 - [Fetch Api](./03-Modules/03-fetch.md)
-- [Components](./03-Modules/04-components.md)
-- [JSX](./03-Modules/05-jsx.md)
-- [Props](./03-Modules/06-props.md)
+- [CSS](./03-Modules/04-css.md)
+- [Components](./03-Modules/05-components.md)
+- [JSX](./03-Modules/06-jsx.md)
+- [Props](./03-Modules/07-props.md)
 - State
 - Event Handler
 - Lifecycle
