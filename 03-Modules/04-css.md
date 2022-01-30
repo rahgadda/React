@@ -8,4 +8,6 @@
   - Declaration Types
     ![](../01-Images/05-css-load.png)
   - Box Model
-  - 
+  
+  - Color Notations
+  - Size Notation
