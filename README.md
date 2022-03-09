@@ -5,7 +5,7 @@
 - [Installation](#installation)
 - [Modules](#modules)
 - [Appendix](#appendix)
-- [Article Link](#articlelink)
+- [Article Link](#link)
 
 ## Overview
 - React.js is an open-source, front end, JavaScript `library` for building user interfaces or UI components.
@@ -209,5 +209,5 @@ Below are the basic building blocks of React.js
 - [React Setup Video](https://www.youtube.com/watch?v=ihhPyqfdbjo&t=514s)
 - [React 17 Setup](https://iamabhirupdatta.medium.com/setting-up-react-17-with-webpack-and-babel-part-1-e11b674a6102)
 
-## Article Link
+## Link
 [here](https://rahulkirangaddam.is-a.dev/React.js/)
