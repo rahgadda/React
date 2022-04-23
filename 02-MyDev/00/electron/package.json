@@ -21,7 +21,7 @@
     "forge": {
       "packagerConfig": {},
       "publishers": [
-       {
+        {
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
@@ -29,7 +29,8 @@
               "name": "React.js"
             }
           }
-      }],
+        }
+      ],
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -81,6 +82,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "@electron-forge/plugin-webpack": "6.0.0-beta.63",
+    "@electron-forge/publisher-github": "^6.0.0-beta.63",
     "@vercel/webpack-asset-relocator-loader": "1.7.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.0.0",
