@@ -9,13 +9,13 @@ jobs:
   publish_on_linux:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2       
+    - uses: actions/checkout@v2 
+    - name: Change Directory
+      run: | 
+        cd ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
-    - name: Change Directory
-      run: | 
-        cd React.js/02-MyDev/00/electron/
     - name: install dependencies
       run: npm install
     - name: publish
@@ -32,7 +32,7 @@ jobs:
         node-version: 14
     - name: Change Directory
       run: | 
-        cd React.js/02-MyDev/00/electron/ 
+        cd ./02-MyDev/00/electron/
     - name: install dependencies
       run: npm install
     - name: publish
@@ -49,7 +49,7 @@ jobs:
         node-version: 14
     - name: Change Directory
       run: | 
-        cd React.js/02-MyDev/00/electron/
+        cd ./02-MyDev/00/electron/
     - name: install dependencies
       run: npm install
     - name: publish
