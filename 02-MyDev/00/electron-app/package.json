@@ -5,7 +5,7 @@
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "appId": "rahulkirangaddam.is-a.dev",
+    "appId": "com.rahgadda.React",
     "files": [
       "build/**/*",
       "node_modules/**/*",
@@ -14,7 +14,16 @@
     ],
     "directories": {
       "buildResources": "assets"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "rahgadda",
+        "repo": "React",
+        "host": "github.com",
+        "protocol": "https"
+      }
+    ]
   },
   "extends": null,
   "dependencies": {
@@ -35,7 +44,7 @@
     "electron-build": "react-scripts build",
     "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-package": "./node_modules/.bin/electron-builder -c.extraMetadata.main=build/electron.js",
-    "electron:build:all": "npm run electron-build && electron-builder build --publish never -mwl"
+    "electron:build:win": "npm run electron-build && electron-builder build --publish always --win --ia32"
   },
   "eslintConfig": {
     "extends": [
