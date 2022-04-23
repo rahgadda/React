@@ -10,49 +10,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 
-    - name: Change Directory
-      run: ls -la
-      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
     - name: install dependencies
       run: npm install
+      working-directory: ./02-MyDev/00/electron/
     - name: publish
       env:
         GITHUB_TOKEN: /${{ secrets.GITHUB_TOKEN }}
       run: npm run publish
+      working-directory: ./02-MyDev/00/electron/
 
   publish_on_mac:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: List Folders
-      run: ls -la
-      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
     - name: install dependencies
       run: npm install
+      working-directory: ./02-MyDev/00/electron/
     - name: publish
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run publish
+      working-directory: ./02-MyDev/00/electron/
       
   publish_on_win:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: List Folders
-      run: ls
-      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
     - name: install dependencies
       run: npm install
+      working-directory: ./02-MyDev/00/electron/
     - name: publish
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run publish
+      working-directory: ./02-MyDev/00/electron/
