@@ -26,7 +26,11 @@
           "config": {
             "repository": {
               "owner": "rahgadda",
-              "name": "React.js"
+              "name": "React.js",
+              "options": {
+                  protocol: 'https',
+                  host: 'api.github.com'
+              }
             }
           }
         }
