@@ -22,3 +22,8 @@ npm install --save react react-dom
 ```
 - Comment below in `main.js` to disable display of Developer Tools   
 `mainWindow.webContents.openDevTools();`
+- Finally !!!
+```sh
+npm start
+npm run make
+```
