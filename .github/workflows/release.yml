@@ -3,11 +3,8 @@ on:
   push:
     tags:
       - '*'
-
 permissions: write-all
-
-jobs:
-     
+jobs:  
   publish_on_win:
     runs-on: windows-latest
     steps:
@@ -18,14 +15,8 @@ jobs:
     - name: install dependencies
       run: npm install
       working-directory: ./02-MyDev/00/electron-app/
-    - name: Build/release Electron app
-      uses: samuelmeuli/action-electron-builder@v1
-      with:
-        # GitHub token, automatically provided to the action
-        # (No need to define this secret in the repo settings)
-        github_token: ${{ secrets.github_token }}
-
-        # If the commit is tagged with a version (e.g. "v1.0.0"),
-        # release the app after building
-        release: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    - name: publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run electron:build:win
       working-directory: ./02-MyDev/00/electron-app/
