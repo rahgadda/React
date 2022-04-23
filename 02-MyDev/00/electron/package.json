@@ -28,8 +28,8 @@
               "owner": "rahgadda",
               "name": "React.js",
               "options": {
-                  protocol: 'https',
-                  host: 'api.github.com'
+                  "protocol": "https",
+                  "host": "api.github.com"
               }
             }
           }
