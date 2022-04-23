@@ -18,7 +18,7 @@ npm install --save react react-dom
         presets: ['@babel/preset-react']
       }
     }
-},
+}
 ```
 - Comment below in `main.js` to disable display of Developer Tools   
 `mainWindow.webContents.openDevTools();`
