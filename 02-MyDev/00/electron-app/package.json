@@ -60,11 +60,7 @@
         "owner": "rahgadda",
         "repo": "React"
       }
-    ],
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/rahgadda/React.git"
-    }
+    ]
   },
   "extends": null,
   "dependencies": {
