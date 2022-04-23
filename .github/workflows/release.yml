@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 
+    - name: List Folders
+      run: ls -la
     - name: Change Directory
       run: | 
         cd ./02-MyDev/00/electron/
@@ -27,12 +29,14 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@master
-      with:
-        node-version: 14
+    - name: List Folders
+      run: ls -la
     - name: Change Directory
       run: | 
         cd ./02-MyDev/00/electron/
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
     - name: install dependencies
       run: npm install
     - name: publish
@@ -43,13 +47,15 @@ jobs:
   publish_on_win:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2       
-    - uses: actions/setup-node@master
-      with:
-        node-version: 14
+    - uses: actions/checkout@v2
+    - name: List Folders
+      run: ls
     - name: Change Directory
       run: | 
         cd ./02-MyDev/00/electron/
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
     - name: install dependencies
       run: npm install
     - name: publish
