@@ -5,6 +5,7 @@
 ```sh
 npx create-electron-app electron --template=webpack
 npm install --save-dev @babel/core @babel/preset-react babel-loader
+npm install -D @electron-forge/publisher-github
 npm install --save react react-dom
 ```
 - Add below code `webpack.rules.js`
