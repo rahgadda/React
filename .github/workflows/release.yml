@@ -13,8 +13,7 @@ jobs:
     - name: List Folders
       run: ls -la
     - name: Change Directory
-      run: | 
-        cd ./02-MyDev/00/electron/
+      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
@@ -32,8 +31,7 @@ jobs:
     - name: List Folders
       run: ls -la
     - name: Change Directory
-      run: | 
-        cd ./02-MyDev/00/electron/
+      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
@@ -51,8 +49,7 @@ jobs:
     - name: List Folders
       run: ls
     - name: Change Directory
-      run: | 
-        cd ./02-MyDev/00/electron/
+      working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
         node-version: 14
