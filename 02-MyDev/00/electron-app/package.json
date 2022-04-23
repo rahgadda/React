@@ -5,16 +5,18 @@
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "name": "ElectronApp",
-    "appId": "electron-app",
+    "appId": "rahulkirangaddam.is-a.dev",
     "files": [
       "build/**/*",
-      "node_modules/**/*"
+      "node_modules/**/*",
+      "package.json",
+      "public/electron.js"
     ],
     "directories": {
       "buildResources": "assets"
     }
   },
+  "extends": null,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -30,9 +32,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "electron-build": "react-scripts build",
     "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-package": "./node_modules/.bin/electron-builder -c.extraMetadata.main=build/electron.js",
-    "preelectron-package": "npm run build"
+    "electron:build:all": "npm run electron-build && electron-builder build --publish never -mwl"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +54,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "electron": "^18.1.0",
+    "electron-builder": "^23.0.3",
+    "wait-on": "^6.0.1"
   }
 }
