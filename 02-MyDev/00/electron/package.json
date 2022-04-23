@@ -21,7 +21,7 @@
     "forge": {
       "packagerConfig": {},
       "publishers": [
-        {
+       {
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
@@ -29,8 +29,7 @@
               "name": "React.js"
             }
           }
-        }
-      ]
+      }],
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
