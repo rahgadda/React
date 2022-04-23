@@ -10,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 
-    - name: List Folders
-      run: ls -la
     - name: Change Directory
+      run: ls -la
       working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
@@ -30,7 +29,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: List Folders
       run: ls -la
-    - name: Change Directory
       working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
@@ -48,7 +46,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: List Folders
       run: ls
-    - name: Change Directory
       working-directory: ./02-MyDev/00/electron/
     - uses: actions/setup-node@master
       with:
